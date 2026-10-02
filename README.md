@@ -95,4 +95,5 @@ Paths and their environment-variable overrides are in [harness/config.py](harnes
 
 * The rustc change is not included here. It is described in [docs/02](docs/02-rustc.md); the
   tests take any rustc that implements it.
-* Authorship and tool use: _to be written by the author._
+* Authorship and tool use: the analysis, test scripts and documentation were
+  written with the help of an AI assistant (Claude Code). I wrote the LLVM patch and reviewed the results and the patch.

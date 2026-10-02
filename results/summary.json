@@ -1,0 +1,1560 @@
+{
+ "lit": {
+  "new_test_upstream_failed": [
+   "LLVM :: CodeGen/Xtensa/calling-conv-stack-align.ll"
+  ],
+  "new_test_fixed_failed": [],
+  "xtensa_summary": [
+   "Passed: 110 (100.00%)"
+  ],
+  "ok": true
+ },
+ "check_llvm": {
+  "total": 78529,
+  "failed": [
+   "LLVM :: MC/AsmParser/block-comment.s",
+   "LLVM :: tools/llvm-remarkutil/filter/filter.test"
+  ],
+  "new_failures": [],
+  "summary": [
+   "Failed Tests (2):",
+   "Skipped          :   375 (0.48%)",
+   "Unsupported      : 37550 (47.82%)",
+   "Passed           : 40522 (51.60%)",
+   "Expectedly Failed:    80 (0.10%)",
+   "Failed           :     2 (0.00%)"
+  ]
+ },
+ "rust_matrix": {
+  "R1": {
+   "runs": 15,
+   "finished": 15,
+   "crashed": 0,
+   "checks": 88905,
+   "fail:va:gcc->rust": 2405,
+   "fail:va:rust->gcc": 505,
+   "fail:va:gcc->gcc(control)": 505,
+   "asm identical": 0,
+   "verifier_bad": 0
+  },
+  "R2": {
+   "runs": 15,
+   "finished": 15,
+   "crashed": 0,
+   "checks": 88905,
+   "fail:va:gcc->rust": 2405,
+   "fail:va:rust->gcc": 505,
+   "fail:va:gcc->gcc(control)": 505,
+   "asm identical": 15,
+   "verifier_bad": 0
+  },
+  "R3": {
+   "runs": 15,
+   "finished": 15,
+   "crashed": 0,
+   "checks": 54660,
+   "fail:va:gcc->rust": 1760,
+   "fail:va:rust->gcc": 577,
+   "fail:va:gcc->gcc(control)": 290,
+   "fail:rust->gcc": 1430,
+   "verifier_bad": 0
+  },
+  "R4": {
+   "runs": 15,
+   "finished": 15,
+   "crashed": 0,
+   "checks": 88905,
+   "fail:va:gcc->rust": 2405,
+   "fail:va:rust->gcc": 982,
+   "fail:va:gcc->gcc(control)": 505,
+   "fail:rust->gcc": 2080,
+   "asm identical": 0,
+   "verifier_bad": 0
+  },
+  "R5": {
+   "runs": 5,
+   "finished": 0,
+   "crashed": 5,
+   "checks": 0,
+   "verifier_bad": 5
+  },
+  "R6": {
+   "runs": 5,
+   "finished": 5,
+   "crashed": 0,
+   "checks": 18525,
+   "fail:va:gcc->rust": 535,
+   "fail:va:rust->gcc": 65,
+   "fail:va:gcc->gcc(control)": 65,
+   "verifier_bad": 0
+  }
+ },
+ "rust_twin": {
+  "runs": 25,
+  "finished": 25,
+  "checks": 264210
+ },
+ "First IR sweep (1968 cases)": {
+  "table": [
+   {
+    "llvm": "B",
+    "chip": "call0",
+    "opt": "O0",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "c->ir": 479,
+     "ir->c": 18,
+     "irdyn->c": 18,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "call0",
+    "opt": "O1",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "c->ir": 479,
+     "ir->c": 18,
+     "irdyn->c": 18,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "call0",
+    "opt": "O2",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "c->ir": 479,
+     "ir->c": 18,
+     "irdyn->c": 18,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "call0",
+    "opt": "O2",
+    "irva": true,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "c->ir": 1107,
+     "ir->c": 18,
+     "irdyn->c": 18,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "call0",
+    "opt": "O3",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "c->ir": 479,
+     "ir->c": 18,
+     "irdyn->c": 18,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp32",
+    "opt": "O0",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "c->ir": 479,
+     "ir->c": 18,
+     "irdyn->c": 18,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp32",
+    "opt": "O1",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "c->ir": 479,
+     "ir->c": 18,
+     "irdyn->c": 18,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp32",
+    "opt": "O2",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "c->ir": 479,
+     "ir->c": 18,
+     "irdyn->c": 18,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp32",
+    "opt": "O3",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "c->ir": 479,
+     "ir->c": 18,
+     "irdyn->c": 18,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp32s2",
+    "opt": "O0",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "c->ir": 479,
+     "ir->c": 18,
+     "irdyn->c": 18,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp32s2",
+    "opt": "O1",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "c->ir": 479,
+     "ir->c": 18,
+     "irdyn->c": 18,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp32s2",
+    "opt": "O2",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "c->ir": 479,
+     "ir->c": 18,
+     "irdyn->c": 18,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp32s2",
+    "opt": "O3",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "c->ir": 479,
+     "ir->c": 18,
+     "irdyn->c": 18,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp32s3",
+    "opt": "O0",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "c->ir": 479,
+     "ir->c": 18,
+     "irdyn->c": 18,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp32s3",
+    "opt": "O1",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "c->ir": 479,
+     "ir->c": 18,
+     "irdyn->c": 18,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp32s3",
+    "opt": "O2",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "c->ir": 479,
+     "ir->c": 18,
+     "irdyn->c": 18,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp32s3",
+    "opt": "O2",
+    "irva": true,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "c->ir": 1107,
+     "ir->c": 18,
+     "irdyn->c": 18,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp32s3",
+    "opt": "O3",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "c->ir": 479,
+     "ir->c": 18,
+     "irdyn->c": 18,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp8266",
+    "opt": "O0",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "c->ir": 479,
+     "ir->c": 18,
+     "irdyn->c": 18,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp8266",
+    "opt": "O1",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "c->ir": 479,
+     "ir->c": 18,
+     "irdyn->c": 18,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp8266",
+    "opt": "O2",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "c->ir": 479,
+     "ir->c": 18,
+     "irdyn->c": 18,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp8266",
+    "opt": "O3",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "c->ir": 479,
+     "ir->c": 18,
+     "irdyn->c": 18,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp8266real",
+    "opt": "O0",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "c->ir": 479,
+     "ir->c": 18,
+     "irdyn->c": 18,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp8266real",
+    "opt": "O1",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "c->ir": 479,
+     "ir->c": 18,
+     "irdyn->c": 18,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp8266real",
+    "opt": "O2",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "c->ir": 479,
+     "ir->c": 18,
+     "irdyn->c": 18,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp8266real",
+    "opt": "O3",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "c->ir": 479,
+     "ir->c": 18,
+     "irdyn->c": 18,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "base",
+    "chip": "call0",
+    "opt": "O0",
+    "irva": false,
+    "chunks": 20,
+    "finished": 0,
+    "checks": 0,
+    "crashed": 20,
+    "fails_by_path": {
+     "c->ir": 5
+    }
+   },
+   {
+    "llvm": "base",
+    "chip": "call0",
+    "opt": "O2",
+    "irva": false,
+    "chunks": 20,
+    "finished": 0,
+    "checks": 0,
+    "crashed": 20,
+    "fails_by_path": {
+     "c->ir": 5
+    }
+   },
+   {
+    "llvm": "base",
+    "chip": "call0",
+    "opt": "O2",
+    "irva": true,
+    "chunks": 20,
+    "finished": 0,
+    "checks": 0,
+    "crashed": 20,
+    "fails_by_path": {
+     "c->ir": 18
+    }
+   },
+   {
+    "llvm": "base",
+    "chip": "esp32",
+    "opt": "O0",
+    "irva": false,
+    "chunks": 20,
+    "finished": 0,
+    "checks": 0,
+    "crashed": 20,
+    "fails_by_path": {
+     "c->ir": 5
+    }
+   },
+   {
+    "llvm": "base",
+    "chip": "esp32",
+    "opt": "O2",
+    "irva": false,
+    "chunks": 20,
+    "finished": 0,
+    "checks": 0,
+    "crashed": 20,
+    "fails_by_path": {
+     "c->ir": 5
+    }
+   },
+   {
+    "llvm": "base",
+    "chip": "esp32s2",
+    "opt": "O0",
+    "irva": false,
+    "chunks": 20,
+    "finished": 0,
+    "checks": 0,
+    "crashed": 20,
+    "fails_by_path": {
+     "c->ir": 5
+    }
+   },
+   {
+    "llvm": "base",
+    "chip": "esp32s2",
+    "opt": "O2",
+    "irva": false,
+    "chunks": 20,
+    "finished": 0,
+    "checks": 0,
+    "crashed": 20,
+    "fails_by_path": {
+     "c->ir": 5
+    }
+   },
+   {
+    "llvm": "base",
+    "chip": "esp32s3",
+    "opt": "O0",
+    "irva": false,
+    "chunks": 20,
+    "finished": 0,
+    "checks": 0,
+    "crashed": 20,
+    "fails_by_path": {
+     "c->ir": 5
+    }
+   },
+   {
+    "llvm": "base",
+    "chip": "esp32s3",
+    "opt": "O2",
+    "irva": false,
+    "chunks": 20,
+    "finished": 0,
+    "checks": 0,
+    "crashed": 20,
+    "fails_by_path": {
+     "c->ir": 5
+    }
+   },
+   {
+    "llvm": "base",
+    "chip": "esp32s3",
+    "opt": "O2",
+    "irva": true,
+    "chunks": 20,
+    "finished": 0,
+    "checks": 0,
+    "crashed": 20,
+    "fails_by_path": {
+     "c->ir": 18
+    }
+   },
+   {
+    "llvm": "base",
+    "chip": "esp8266",
+    "opt": "O0",
+    "irva": false,
+    "chunks": 20,
+    "finished": 0,
+    "checks": 0,
+    "crashed": 20,
+    "fails_by_path": {
+     "c->ir": 5
+    }
+   },
+   {
+    "llvm": "base",
+    "chip": "esp8266",
+    "opt": "O2",
+    "irva": false,
+    "chunks": 20,
+    "finished": 0,
+    "checks": 0,
+    "crashed": 20,
+    "fails_by_path": {
+     "c->ir": 5
+    }
+   },
+   {
+    "llvm": "base",
+    "chip": "esp8266real",
+    "opt": "O0",
+    "irva": false,
+    "chunks": 20,
+    "finished": 0,
+    "checks": 0,
+    "crashed": 20,
+    "fails_by_path": {
+     "c->ir": 5
+    }
+   },
+   {
+    "llvm": "base",
+    "chip": "esp8266real",
+    "opt": "O2",
+    "irva": false,
+    "chunks": 20,
+    "finished": 0,
+    "checks": 0,
+    "crashed": 20,
+    "fails_by_path": {
+     "c->ir": 5
+    }
+   }
+  ],
+  "attribution": {
+   "('B', 'call0', 'O0', False)": {
+    "odd case, identical to twin": 60,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 61
+   },
+   "('B', 'call0', 'O1', False)": {
+    "odd case, identical to twin": 60,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 61
+   },
+   "('B', 'call0', 'O2', False)": {
+    "odd case, identical to twin": 60,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 61
+   },
+   "('B', 'call0', 'O2', True)": {
+    "odd case, identical to twin": 120,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 122
+   },
+   "('B', 'call0', 'O3', False)": {
+    "odd case, identical to twin": 60,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 61
+   },
+   "('B', 'esp32', 'O0', False)": {
+    "odd case, identical to twin": 60,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 61
+   },
+   "('B', 'esp32', 'O1', False)": {
+    "odd case, identical to twin": 60,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 61
+   },
+   "('B', 'esp32', 'O2', False)": {
+    "odd case, identical to twin": 60,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 61
+   },
+   "('B', 'esp32', 'O3', False)": {
+    "odd case, identical to twin": 60,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 61
+   },
+   "('B', 'esp32s2', 'O0', False)": {
+    "odd case, identical to twin": 60,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 61
+   },
+   "('B', 'esp32s2', 'O1', False)": {
+    "odd case, identical to twin": 60,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 61
+   },
+   "('B', 'esp32s2', 'O2', False)": {
+    "odd case, identical to twin": 60,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 61
+   },
+   "('B', 'esp32s2', 'O3', False)": {
+    "odd case, identical to twin": 60,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 61
+   },
+   "('B', 'esp32s3', 'O0', False)": {
+    "odd case, identical to twin": 60,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 61
+   },
+   "('B', 'esp32s3', 'O1', False)": {
+    "odd case, identical to twin": 60,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 61
+   },
+   "('B', 'esp32s3', 'O2', False)": {
+    "odd case, identical to twin": 60,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 61
+   },
+   "('B', 'esp32s3', 'O2', True)": {
+    "odd case, identical to twin": 120,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 122
+   },
+   "('B', 'esp32s3', 'O3', False)": {
+    "odd case, identical to twin": 60,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 61
+   },
+   "('B', 'esp8266', 'O0', False)": {
+    "odd case, identical to twin": 60,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 61
+   },
+   "('B', 'esp8266', 'O1', False)": {
+    "odd case, identical to twin": 60,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 61
+   },
+   "('B', 'esp8266', 'O2', False)": {
+    "odd case, identical to twin": 60,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 61
+   },
+   "('B', 'esp8266', 'O3', False)": {
+    "odd case, identical to twin": 60,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 61
+   },
+   "('B', 'esp8266real', 'O0', False)": {
+    "odd case, identical to twin": 60,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 61
+   },
+   "('B', 'esp8266real', 'O1', False)": {
+    "odd case, identical to twin": 60,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 61
+   },
+   "('B', 'esp8266real', 'O2', False)": {
+    "odd case, identical to twin": 60,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 61
+   },
+   "('B', 'esp8266real', 'O3', False)": {
+    "odd case, identical to twin": 60,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 61
+   }
+  },
+  "upstream_vs_fixed": {
+   "lists": 94,
+   "identical": 94,
+   "checks per side": 240232,
+   "identical pre-existing failures": 9196
+  },
+  "covered_cases_per_config": {
+   "call0 O0": 830,
+   "call0 O1": 61,
+   "call0 O2": 945,
+   "call0 O2 irva": 945,
+   "call0 O3": 61,
+   "esp32 O0": 61,
+   "esp32 O1": 61,
+   "esp32 O2": 61,
+   "esp32 O3": 61,
+   "esp32s2 O0": 61,
+   "esp32s2 O1": 61,
+   "esp32s2 O2": 61,
+   "esp32s2 O3": 61,
+   "esp32s3 O0": 61,
+   "esp32s3 O1": 61,
+   "esp32s3 O2": 945,
+   "esp32s3 O2 irva": 945,
+   "esp32s3 O3": 61,
+   "esp8266 O0": 61,
+   "esp8266 O1": 61,
+   "esp8266 O2": 61,
+   "esp8266 O3": 61,
+   "esp8266real O0": 61,
+   "esp8266real O1": 61,
+   "esp8266real O2": 945,
+   "esp8266real O3": 61
+  }
+ },
+ "esp-clang sweep (1968 cases, C front end)": {
+  "table": [
+   {
+    "llvm": "B",
+    "chip": "esp32",
+    "opt": "O0",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "ir->c": 1615,
+     "irdyn->c": 1617,
+     "c->ir": 479,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp32",
+    "opt": "O2",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "ir->c": 1615,
+     "irdyn->c": 1617,
+     "c->ir": 479,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp32s2",
+    "opt": "O0",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "ir->c": 1615,
+     "irdyn->c": 1617,
+     "c->ir": 479,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp32s2",
+    "opt": "O2",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "ir->c": 1615,
+     "irdyn->c": 1617,
+     "c->ir": 479,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp32s3",
+    "opt": "O0",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "ir->c": 1615,
+     "irdyn->c": 1617,
+     "c->ir": 479,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp32s3",
+    "opt": "O2",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "ir->c": 1615,
+     "irdyn->c": 1617,
+     "c->ir": 479,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp8266real",
+    "opt": "O0",
+    "irva": false,
+    "chunks": 20,
+    "finished": 0,
+    "checks": 0,
+    "known_error": 20,
+    "fails_by_path": {}
+   },
+   {
+    "llvm": "B",
+    "chip": "esp8266real",
+    "opt": "O2",
+    "irva": false,
+    "chunks": 20,
+    "finished": 20,
+    "checks": 59872,
+    "fails_by_path": {
+     "ir->c": 1613,
+     "irdyn->c": 1617,
+     "c->ir": 479,
+     "c->c": 18
+    }
+   },
+   {
+    "llvm": "base",
+    "chip": "esp32",
+    "opt": "O0",
+    "irva": false,
+    "chunks": 20,
+    "finished": 15,
+    "checks": 43920,
+    "crashed": 5,
+    "fails_by_path": {
+     "ir->c": 1363,
+     "irdyn->c": 1365,
+     "c->ir": 209,
+     "c->c": 6
+    }
+   },
+   {
+    "llvm": "base",
+    "chip": "esp32",
+    "opt": "O2",
+    "irva": false,
+    "chunks": 20,
+    "finished": 15,
+    "checks": 43920,
+    "crashed": 5,
+    "fails_by_path": {
+     "ir->c": 1365,
+     "irdyn->c": 1365,
+     "c->ir": 209,
+     "c->c": 6
+    }
+   },
+   {
+    "llvm": "base",
+    "chip": "esp32s2",
+    "opt": "O0",
+    "irva": false,
+    "chunks": 20,
+    "finished": 15,
+    "checks": 43920,
+    "crashed": 5,
+    "fails_by_path": {
+     "ir->c": 1363,
+     "irdyn->c": 1365,
+     "c->ir": 209,
+     "c->c": 6
+    }
+   },
+   {
+    "llvm": "base",
+    "chip": "esp32s2",
+    "opt": "O2",
+    "irva": false,
+    "chunks": 20,
+    "finished": 15,
+    "checks": 43920,
+    "crashed": 5,
+    "fails_by_path": {
+     "ir->c": 1365,
+     "irdyn->c": 1365,
+     "c->ir": 209,
+     "c->c": 6
+    }
+   },
+   {
+    "llvm": "base",
+    "chip": "esp32s3",
+    "opt": "O0",
+    "irva": false,
+    "chunks": 20,
+    "finished": 15,
+    "checks": 43920,
+    "crashed": 5,
+    "fails_by_path": {
+     "ir->c": 1363,
+     "irdyn->c": 1365,
+     "c->ir": 209,
+     "c->c": 6
+    }
+   },
+   {
+    "llvm": "base",
+    "chip": "esp32s3",
+    "opt": "O2",
+    "irva": false,
+    "chunks": 20,
+    "finished": 15,
+    "checks": 43920,
+    "crashed": 5,
+    "fails_by_path": {
+     "ir->c": 1365,
+     "irdyn->c": 1365,
+     "c->ir": 209,
+     "c->c": 6
+    }
+   },
+   {
+    "llvm": "base",
+    "chip": "esp8266real",
+    "opt": "O0",
+    "irva": false,
+    "chunks": 20,
+    "finished": 0,
+    "checks": 0,
+    "known_error": 20,
+    "fails_by_path": {}
+   },
+   {
+    "llvm": "base",
+    "chip": "esp8266real",
+    "opt": "O2",
+    "irva": false,
+    "chunks": 20,
+    "finished": 15,
+    "checks": 43920,
+    "crashed": 5,
+    "fails_by_path": {
+     "ir->c": 1363,
+     "irdyn->c": 1365,
+     "c->ir": 209,
+     "c->c": 6
+    }
+   }
+  ],
+  "attribution": {
+   "('B', 'esp32', 'O0', False)": {
+    "odd case, identical to twin": 508,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 529
+   },
+   "('B', 'esp32', 'O2', False)": {
+    "odd case, identical to twin": 508,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 529
+   },
+   "('B', 'esp32s2', 'O0', False)": {
+    "odd case, identical to twin": 508,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 529
+   },
+   "('B', 'esp32s2', 'O2', False)": {
+    "odd case, identical to twin": 508,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 529
+   },
+   "('B', 'esp32s3', 'O0', False)": {
+    "odd case, identical to twin": 508,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 529
+   },
+   "('B', 'esp32s3', 'O2', False)": {
+    "odd case, identical to twin": 508,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 529
+   },
+   "('B', 'esp8266real', 'O0', False)": {},
+   "('B', 'esp8266real', 'O2', False)": {
+    "odd case, identical to twin": 508,
+    "GCC self-inconsistent (excluded)": 4,
+    "unchanged case: same failure with upstream LLVM": 529
+   }
+  },
+  "upstream_vs_fixed": {
+   "lists": 52,
+   "identical": 52,
+   "checks per side": 171772,
+   "identical pre-existing failures": 16961
+  },
+  "covered_cases_per_config": {
+   "esp32 O0": 529,
+   "esp32 O2": 529,
+   "esp32s2 O0": 529,
+   "esp32s2 O2": 529,
+   "esp32s3 O0": 529,
+   "esp32s3 O2": 945,
+   "esp8266real O2": 945
+  }
+ },
+ "Extended IR sweep (11714 cases)": {
+  "table": [
+   {
+    "llvm": "B",
+    "chip": "call0",
+    "opt": "O0",
+    "irva": false,
+    "chunks": 60,
+    "finished": 60,
+    "checks": 404760,
+    "fails_by_path": {
+     "c->ir": 4528,
+     "ir->c": 176,
+     "irdyn->c": 180,
+     "c->c": 180
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "call0",
+    "opt": "O2",
+    "irva": false,
+    "chunks": 60,
+    "finished": 60,
+    "checks": 404760,
+    "fails_by_path": {
+     "c->ir": 4528,
+     "ir->c": 180,
+     "irdyn->c": 180,
+     "c->c": 180
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp32",
+    "opt": "O0",
+    "irva": false,
+    "chunks": 60,
+    "finished": 60,
+    "checks": 404760,
+    "fails_by_path": {
+     "c->ir": 4528,
+     "ir->c": 180,
+     "irdyn->c": 180,
+     "c->c": 180
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp32",
+    "opt": "O2",
+    "irva": false,
+    "chunks": 60,
+    "finished": 60,
+    "checks": 404760,
+    "fails_by_path": {
+     "c->ir": 4528,
+     "ir->c": 180,
+     "irdyn->c": 180,
+     "c->c": 180
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp32s2",
+    "opt": "O0",
+    "irva": false,
+    "chunks": 60,
+    "finished": 60,
+    "checks": 404760,
+    "fails_by_path": {
+     "c->ir": 4528,
+     "ir->c": 180,
+     "irdyn->c": 180,
+     "c->c": 180
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp32s2",
+    "opt": "O2",
+    "irva": false,
+    "chunks": 60,
+    "finished": 60,
+    "checks": 404760,
+    "fails_by_path": {
+     "c->ir": 4528,
+     "ir->c": 180,
+     "irdyn->c": 180,
+     "c->c": 180
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp32s3",
+    "opt": "O0",
+    "irva": false,
+    "chunks": 60,
+    "finished": 60,
+    "checks": 404760,
+    "fails_by_path": {
+     "c->ir": 4528,
+     "ir->c": 180,
+     "irdyn->c": 180,
+     "c->c": 180
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp32s3",
+    "opt": "O1",
+    "irva": false,
+    "chunks": 60,
+    "finished": 60,
+    "checks": 404760,
+    "fails_by_path": {
+     "c->ir": 4528,
+     "ir->c": 180,
+     "irdyn->c": 180,
+     "c->c": 180
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp32s3",
+    "opt": "O2",
+    "irva": false,
+    "chunks": 60,
+    "finished": 60,
+    "checks": 404760,
+    "fails_by_path": {
+     "c->ir": 4528,
+     "ir->c": 180,
+     "irdyn->c": 180,
+     "c->c": 180
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp32s3",
+    "opt": "O3",
+    "irva": false,
+    "chunks": 60,
+    "finished": 60,
+    "checks": 404760,
+    "fails_by_path": {
+     "c->ir": 4528,
+     "ir->c": 180,
+     "irdyn->c": 180,
+     "c->c": 180
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp8266",
+    "opt": "O0",
+    "irva": false,
+    "chunks": 60,
+    "finished": 60,
+    "checks": 404760,
+    "fails_by_path": {
+     "c->ir": 4528,
+     "ir->c": 176,
+     "irdyn->c": 180,
+     "c->c": 180
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp8266",
+    "opt": "O2",
+    "irva": false,
+    "chunks": 60,
+    "finished": 60,
+    "checks": 404760,
+    "fails_by_path": {
+     "c->ir": 4528,
+     "ir->c": 180,
+     "irdyn->c": 180,
+     "c->c": 180
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp8266real",
+    "opt": "O0",
+    "irva": false,
+    "chunks": 60,
+    "finished": 60,
+    "checks": 404760,
+    "fails_by_path": {
+     "c->ir": 4528,
+     "ir->c": 176,
+     "irdyn->c": 180,
+     "c->c": 180
+    }
+   },
+   {
+    "llvm": "B",
+    "chip": "esp8266real",
+    "opt": "O2",
+    "irva": false,
+    "chunks": 60,
+    "finished": 60,
+    "checks": 404760,
+    "fails_by_path": {
+     "c->ir": 4528,
+     "ir->c": 180,
+     "irdyn->c": 180,
+     "c->c": 180
+    }
+   }
+  ],
+  "attribution": {
+   "('B', 'call0', 'O0', False)": {
+    "odd case, identical to twin": 594,
+    "GCC self-inconsistent (excluded)": 40,
+    "unchanged case: same failure with upstream LLVM": 564
+   },
+   "('B', 'call0', 'O2', False)": {
+    "odd case, identical to twin": 594,
+    "GCC self-inconsistent (excluded)": 40,
+    "unchanged case: same failure with upstream LLVM": 564
+   },
+   "('B', 'esp32', 'O0', False)": {
+    "odd case, identical to twin": 594,
+    "GCC self-inconsistent (excluded)": 40,
+    "unchanged case: same failure with upstream LLVM": 564
+   },
+   "('B', 'esp32', 'O2', False)": {
+    "odd case, identical to twin": 594,
+    "GCC self-inconsistent (excluded)": 40,
+    "unchanged case: same failure with upstream LLVM": 564
+   },
+   "('B', 'esp32s2', 'O0', False)": {
+    "odd case, identical to twin": 594,
+    "GCC self-inconsistent (excluded)": 40,
+    "unchanged case: same failure with upstream LLVM": 564
+   },
+   "('B', 'esp32s2', 'O2', False)": {
+    "odd case, identical to twin": 594,
+    "GCC self-inconsistent (excluded)": 40,
+    "unchanged case: same failure with upstream LLVM": 564
+   },
+   "('B', 'esp32s3', 'O0', False)": {
+    "odd case, identical to twin": 594,
+    "GCC self-inconsistent (excluded)": 40,
+    "unchanged case: same failure with upstream LLVM": 564
+   },
+   "('B', 'esp32s3', 'O1', False)": {
+    "odd case, identical to twin": 594,
+    "GCC self-inconsistent (excluded)": 40,
+    "unchanged case: same failure with upstream LLVM": 564
+   },
+   "('B', 'esp32s3', 'O2', False)": {
+    "odd case, identical to twin": 594,
+    "GCC self-inconsistent (excluded)": 40,
+    "unchanged case: same failure with upstream LLVM": 564
+   },
+   "('B', 'esp32s3', 'O3', False)": {
+    "odd case, identical to twin": 594,
+    "GCC self-inconsistent (excluded)": 40,
+    "unchanged case: same failure with upstream LLVM": 564
+   },
+   "('B', 'esp8266', 'O0', False)": {
+    "odd case, identical to twin": 594,
+    "GCC self-inconsistent (excluded)": 40,
+    "unchanged case: same failure with upstream LLVM": 564
+   },
+   "('B', 'esp8266', 'O2', False)": {
+    "odd case, identical to twin": 594,
+    "GCC self-inconsistent (excluded)": 40,
+    "unchanged case: same failure with upstream LLVM": 564
+   },
+   "('B', 'esp8266real', 'O0', False)": {
+    "odd case, identical to twin": 594,
+    "GCC self-inconsistent (excluded)": 40,
+    "unchanged case: same failure with upstream LLVM": 564
+   },
+   "('B', 'esp8266real', 'O2', False)": {
+    "odd case, identical to twin": 594,
+    "GCC self-inconsistent (excluded)": 40,
+    "unchanged case: same failure with upstream LLVM": 564
+   }
+  },
+  "upstream_vs_fixed": {
+   "lists": 152,
+   "identical": 152,
+   "checks per side": 1187240,
+   "identical pre-existing failures": 41832
+  },
+  "covered_cases_per_config": {
+   "call0 O0": 564,
+   "call0 O2": 6036,
+   "esp32 O0": 564,
+   "esp32 O2": 564,
+   "esp32s2 O0": 564,
+   "esp32s2 O2": 564,
+   "esp32s3 O0": 6036,
+   "esp32s3 O1": 564,
+   "esp32s3 O2": 6036,
+   "esp32s3 O3": 564,
+   "esp8266 O0": 564,
+   "esp8266 O2": 564,
+   "esp8266real O0": 564,
+   "esp8266real O2": 6036
+  }
+ },
+ "perfn first sweep + esp-clang IR": {
+  "functions": 64944,
+  "verifier: fails with both": 24670,
+  "asm differs": 10083,
+  "verifier: fixed by the fix": 2214
+ },
+ "perfn extended sweep IR": {
+  "functions": 105426,
+  "asm differs": 26619,
+  "verifier: fixed by the fix": 5412,
+  "verifier: fails with both": 38628
+ },
+ "corpus": {
+  "modules": 1992,
+  "functions": 6336,
+  "byval_functions": 484,
+  "odd_byval_functions": 0,
+  "esp32s3": {
+   "differ": 0,
+   "differ_without_odd_byval": 0,
+   "llc_errors": 0,
+   "verifier_new_in_fixed": 0,
+   "verifier_fixed_by_fix": 0,
+   "verifier_both_fail": 27
+  },
+  "esp8266": {
+   "differ": 0,
+   "differ_without_odd_byval": 0,
+   "llc_errors": 0,
+   "verifier_new_in_fixed": 0,
+   "verifier_fixed_by_fix": 0,
+   "verifier_both_fail": 27
+  }
+ },
+ "corpus_split": {
+  "compiler_builtins-b52890c3ec88c7e6": {
+   "functions": 558,
+   "still_crashing": [
+    {
+     "part": "p22_0_3.ll",
+     "functions": 1
+    },
+    {
+     "part": "p22_0_9.ll",
+     "functions": 1
+    },
+    {
+     "part": "p23_0_2.ll",
+     "functions": 1
+    },
+    {
+     "part": "p25_0_22.ll",
+     "functions": 1
+    },
+    {
+     "part": "p25_0_36.ll",
+     "functions": 1
+    },
+    {
+     "part": "p46_1_0.ll",
+     "functions": 1
+    },
+    {
+     "part": "p49_49_49.ll",
+     "functions": 6
+    }
+   ]
+  },
+  "core-5aa841a71aab21f3": {
+   "functions": 538,
+   "still_crashing": [
+    {
+     "part": "p51_1_24.ll",
+     "functions": 4
+    },
+    {
+     "part": "p51_1_30.ll",
+     "functions": 5
+    }
+   ]
+  },
+  "libm-52ba2eed8832669a": {
+   "functions": 142,
+   "still_crashing": [
+    {
+     "part": "p1_0_2.ll",
+     "functions": 1
+    },
+    {
+     "part": "p11_0_0.ll",
+     "functions": 1
+    },
+    {
+     "part": "p4_0_10.ll",
+     "functions": 1
+    },
+    {
+     "part": "p47_0_0.ll",
+     "functions": 1
+    },
+    {
+     "part": "p59_1_0.ll",
+     "functions": 1
+    }
+   ]
+  },
+  "micromath-a4b020e1954268a3": {
+   "functions": 13,
+   "still_crashing": [
+    {
+     "part": "p4_0_0.ll",
+     "functions": 1
+    }
+   ]
+  }
+ },
+ "unexplained": []
+}

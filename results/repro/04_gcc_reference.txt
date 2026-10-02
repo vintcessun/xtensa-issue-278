@@ -1,0 +1,26 @@
+Xtensa Instruction Set Architecture (ISA) Reference Manual, 8.1.4 Argument Passing (pp. 590-591):
+  "All arguments consist of an integral number of 4-byte words. Thus, the minimum argument size is one word.
+   Integer values smaller than a word (that is, char and short) are stored in the least significant portion
+   of the argument word, with the upper bits set to zero for unsigned values or sign-extended for signed values."
+  "...all arguments have at least 4-byte alignment anyway."
+  "If the size of a structure is not an integral number of words, padding is inserted at one end of the
+   structure. ... A structure larger than a word is padded in the last bytes of the last argument word"
+  "...the caller stores the seventh argument word (after the first six words in registers) at [sp + 0],
+   the eighth word at [sp + 4], and so on."
+
+GCC (gcc/config/xtensa/xtensa.cc) counts every argument in whole words:
+  words = (arg.promoted_size_in_bytes () + UNITS_PER_WORD - 1) / UNITS_PER_WORD;
+
+GCC windowed ABI:
+  esp_nn_max_pool_s8_esp32s3 stack arguments: +0:s32i +4:s32i +8:s32i +12:s32i +16:s32i +20:s32i +24:s32i +28:s32i +32:s32i
+  zero-extension of the u16 values: extui	a11, a2, 0, 16
+  6-byte struct then u16, caller:  extui	a3, a3, 0, 16; s32i.n	a3, sp, 8
+  6-byte struct then u16, callee:  l16ui	a2, sp, 40
+
+GCC call0 ABI:
+  esp_nn_max_pool_s8_esp32s3 stack arguments: +0:s32i +4:s32i +8:s32i +12:s32i +16:s32i +20:s32i +24:s32i +28:s32i +32:s32i
+  zero-extension of the u16 values: extui	a3, a2, 0, 16
+  6-byte struct then u16, caller:  extui	a3, a3, 0, 16; s32i.n	a3, sp, 8
+  6-byte struct then u16, callee:  l16ui	a2, sp, 8
+
+GCC: every stack argument is a full word (s32i of an extended value); the u16 after a 6-byte struct is at +8.

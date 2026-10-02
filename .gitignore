@@ -1,0 +1,7 @@
+# raw run output and downloaded toolchains are large and machine-specific
+/runs/
+/tools/*/
+__pycache__/
+/tools/*.zip
+/tools/*.xz
+/tools/*.part

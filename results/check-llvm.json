@@ -1,0 +1,33 @@
+{
+ "fixed": {
+  "returncode": 1,
+  "total": 78529,
+  "failed": [
+   "LLVM :: MC/AsmParser/block-comment.s",
+   "LLVM :: tools/llvm-remarkutil/filter/filter.test"
+  ],
+  "summary": [
+   "Failed Tests (2):",
+   "Skipped          :   375 (0.48%)",
+   "Unsupported      : 37550 (47.82%)",
+   "Passed           : 40522 (51.60%)",
+   "Expectedly Failed:    80 (0.10%)",
+   "Failed           :     2 (0.00%)"
+  ]
+ },
+ "source_sha256": "8f56ce81e5a2bb311f0a8822923a4d25ba0f51a8b303c44972bcbcf933f0db39",
+ "upstream_rerun_of_failures": {
+  "returncode": 1,
+  "total": 2,
+  "failed": [
+   "LLVM :: MC/AsmParser/block-comment.s",
+   "LLVM :: tools/llvm-remarkutil/filter/filter.test"
+  ],
+  "summary": [
+   "Failed Tests (2):",
+   "Failed: 2 (100.00%)"
+  ]
+ },
+ "new_failures": [],
+ "unit_failures": []
+}

@@ -1,0 +1,26 @@
+esp_nn_max_pool_s8_esp32s3: Rust caller -> C callee that reads every argument as a 32-bit word (QEMU, ESP32-S3 windowed ABI)
+stack poisoned with 0xA5 before the call; the first six arguments travel in a2..a7, the rest on the stack
+
+ # parameter      type      where  esp                       upstream                  fixed                     
+ 0 input          *const i8 a2     ok                        ok                        ok                        
+ 1 input_wd       u16       a3     ok                        ok                        ok                        
+ 2 input_ht       u16       a4     ok                        ok                        ok                        
+ 3 output         *mut i8   a5     ok                        ok                        ok                        
+ 4 output_wd      u16       a6     ok                        ok                        ok                        
+ 5 output_ht      u16       a7     ok                        ok                        ok                        
+ 6 stride_wd      u16       sp+0   WRONG got=a5a54e55 exp=00004e55WRONG got=a5a5dab2 exp=0000dab2ok                        
+ 7 stride_ht      u16       sp+4   WRONG got=a5a5c792 exp=0000c792WRONG got=a5a53779 exp=00003779ok                        
+ 8 filter_wd      u16       sp+8   WRONG got=a5a53bf8 exp=00003bf8WRONG got=a5a56167 exp=00006167ok                        
+ 9 filter_ht      u16       sp+12  WRONG got=a5a54220 exp=00004220WRONG got=a5a54f76 exp=00004f76ok                        
+10 pad_wd         u16       sp+16  WRONG got=a5a5ebee exp=0000ebeeWRONG got=a5a5972a exp=0000972aok                        
+11 pad_ht         u16       sp+20  WRONG got=a5a5babe exp=0000babeWRONG got=a5a55de2 exp=00005de2ok                        
+12 activation_min i32       sp+24  ok                        ok                        ok                        
+13 activation_max i32       sp+28  ok                        ok                        ok                        
+14 channels       u16       sp+32  WRONG got=a5a5c514 exp=0000c514WRONG got=a5a547fb exp=000047fbok                        
+
+      esp: 7 of 15 arguments arrive wrong
+ upstream: 7 of 15 arguments arrive wrong
+    fixed: 0 of 15 arguments arrive wrong
+
+The wrong values keep the right low 16 bits and have 0xa5a5 (the poison) in the upper half:
+the caller stored only two bytes (s16i) into a four-byte argument slot.

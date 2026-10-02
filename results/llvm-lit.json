@@ -1,0 +1,31 @@
+{
+ "new_test_with_upstream_source": {
+  "returncode": 1,
+  "total": 1,
+  "failed": [
+   "LLVM :: CodeGen/Xtensa/calling-conv-stack-align.ll"
+  ],
+  "summary": [
+   "Failed Tests (1):",
+   "Failed: 1 (100.00%)"
+  ]
+ },
+ "new_test_with_fix": {
+  "returncode": 0,
+  "total": 1,
+  "failed": [],
+  "summary": [
+   "Passed: 1 (100.00%)"
+  ]
+ },
+ "all_xtensa_with_fix": {
+  "returncode": 0,
+  "total": 110,
+  "failed": [],
+  "summary": [
+   "Passed: 110 (100.00%)"
+  ]
+ },
+ "source_sha256": "8f56ce81e5a2bb311f0a8822923a4d25ba0f51a8b303c44972bcbcf933f0db39",
+ "ok": true
+}
